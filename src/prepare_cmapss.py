@@ -34,6 +34,7 @@ class CmapssSubset:
     name: str
     train_file: str
     test_file: str
+    
     rul_file: str
 
 
