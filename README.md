@@ -4,7 +4,7 @@
 
 # (The "Actionable" View)
 ![AfterusingRUL](screenshots/Actionable.png)
-1. The Actionable View (Prioritization Tool)
+## 1. The Actionable View (Prioritization Tool)
 
 By zooming in on the health score axis (excluding zero) and applying conditional coloring based on failure probability, the visualization transforms from a simple list into a Decision Support System.
 
@@ -20,4 +20,27 @@ Example: Unit 69 serves as a critical data point; it may still show a high healt
 
 # The "Comparison" View
 ![comparisonimageAfterfirststep](screenshots/step1.png)
+
+
+## 2. The Fleet Overview (Comparison View)
+
+This version maintains a zero-based axis and applies initial color gradients to provide a high-level "pulse" of the entire operation.
+
+Core Insight: This view highlights fleet consistency and stability.
+
+Uniformity: The relative equality in bar lengths indicates that the fleet is currently well-managed, with no engines in a state of "total collapse" or immediate structural failure.
+
+The Visualization Challenge (The Nuance):
+
+Scale: When the axis starts at zero, the difference between a $0.55$ and a $0.58$ health score appears negligible to the human eye.
+
+Critical Thresholds: In aerospace engineering, that $0.03$ difference is mathematically massive, representing potentially dozens of flight hours or specific component degradation. This view is excellent for reporting general fleet availability but less effective for tactical maintenance scheduling.
+
+## Key Technical Takeaways
+
+Predictive Coloring: Moving from static blue to a Red-Green diverging palette based on AVG(Failure Probability) allows for instant visual triage.
+
+Axis Optimization: Excluding zero is essential for high-precision sensor data where small variations in decimals translate to significant physical wear.
+
+Data Integration: Combining Health Score (Current State), Failure Prob (Future Risk), and RUL (Timeline) into a single bar chart creates a multi-dimensional scorecard.
 
