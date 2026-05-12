@@ -2,11 +2,11 @@
 
 ![csv_file](screenshots/csv_created.png)
 
-# (The "Actionable" View)
+# 1.(The "Actionable" View)
 
 ![AfterusingRUL](screenshots/Actionable.png)
 
-## 1. The Actionable View (Prioritization Tool)
+## The Actionable View (Prioritization Tool)
 
 By zooming in on the health score axis (excluding zero) and applying conditional coloring based on failure probability, the visualization transforms from a simple list into a Decision Support System.
 
@@ -20,11 +20,11 @@ Operational Countdown (RUL): The numeric labels at the end of the bars (e.g., $1
 
 Example: Unit 69 serves as a critical data point; it may still show a high health score, but its high-risk color combined with the RUL tells maintenance crews exactly how many flight cycles remain before the engine must be pulled from service.
 
-# The "Comparison" View
+# 2.The "Comparison" View
 
 ![comparisonimageAfterfirststep](screenshots/step1.png)
 
-## 2. The Fleet Overview (Comparison View)
+## The Fleet Overview (Comparison View)
 
 This version maintains a zero-based axis and applies initial color gradients to provide a high-level "pulse" of the entire operation.
 
@@ -46,9 +46,9 @@ Axis Optimization: Excluding zero is essential for high-precision sensor data wh
 
 Data Integration: Combining Health Score (Current State), Failure Prob (Future Risk), and RUL (Timeline) into a single bar chart creates a multi-dimensional scorecard.
 
-# Maintanence Schedule Heat map
+# 3.Maintanence Schedule Heat map
 
-![maintanencescheduleheatmap](Screenshots/MAINTANENCE.png)
+![maintanencescheduleheatmap](screenshots/MAINTANENCE.png)
 
 This heatmap visualizes the degradation of jet engine health as they approach their end-of-life (EOL). The X-axis represents the "Countdown" (Cycles Remaining), while the Y-axis sorts the fleet by their remaining useful life.
 
