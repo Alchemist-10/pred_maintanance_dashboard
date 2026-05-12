@@ -3,7 +3,9 @@
 ![csv_file](screenshots/csv_created.png)
 
 # (The "Actionable" View)
+
 ![AfterusingRUL](screenshots/Actionable.png)
+
 ## 1. The Actionable View (Prioritization Tool)
 
 By zooming in on the health score axis (excluding zero) and applying conditional coloring based on failure probability, the visualization transforms from a simple list into a Decision Support System.
@@ -19,8 +21,8 @@ Operational Countdown (RUL): The numeric labels at the end of the bars (e.g., $1
 Example: Unit 69 serves as a critical data point; it may still show a high health score, but its high-risk color combined with the RUL tells maintenance crews exactly how many flight cycles remain before the engine must be pulled from service.
 
 # The "Comparison" View
-![comparisonimageAfterfirststep](screenshots/step1.png)
 
+![comparisonimageAfterfirststep](screenshots/step1.png)
 
 ## 2. The Fleet Overview (Comparison View)
 
@@ -44,3 +46,22 @@ Axis Optimization: Excluding zero is essential for high-precision sensor data wh
 
 Data Integration: Combining Health Score (Current State), Failure Prob (Future Risk), and RUL (Timeline) into a single bar chart creates a multi-dimensional scorecard.
 
+# Maintanence Schedule Heat map
+
+![maintanencescheduleheatmap](Screenshots/MAINTANENCE.png)
+
+This heatmap visualizes the degradation of jet engine health as they approach their end-of-life (EOL). The X-axis represents the "Countdown" (Cycles Remaining), while the Y-axis sorts the fleet by their remaining useful life.
+
+## Key Insights:
+
+The Critical Handoff: The transition from Green to Red between the 51-100 and 31-50 buckets identifies the "Threshold of Concern." This is the optimal window for logistics teams to ensure spare parts are on-site.
+
+Degradation Velocity: By observing the intensity of the red in the 0-10 column, we can differentiate between engines that are failing "gracefully" versus those experiencing "rapid collapse."
+
+Operational Planning: This view allows for staggered maintenance. Instead of all engines coming in at once, we can see the spread of the fleet's remaining life, preventing hangar bottlenecks.
+
+## Visual Logic:
+
+Sorting: Units are sorted by AVG(Health Rul) Ascending, placing the most urgent engines at the top.
+
+Color Palette: A Red-Green Diverging palette is used, where Red indicates a critical Component Health Score, mapping perfectly to the urgency of low "Cycles Remaining."
