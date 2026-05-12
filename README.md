@@ -2,7 +2,7 @@
 
 ![csv_file](screenshots/csv_created.png)
 
-# 1.(The "Actionable" View)
+# 1.Fleet Status Scorecard 
 
 ![AfterusingRUL](screenshots/Actionable.png)
 
@@ -20,7 +20,7 @@ Operational Countdown (RUL): The numeric labels at the end of the bars (e.g., $1
 
 Example: Unit 69 serves as a critical data point; it may still show a high health score, but its high-risk color combined with the RUL tells maintenance crews exactly how many flight cycles remain before the engine must be pulled from service.
 
-# 2.The "Comparison" View
+# 1.2 The "Comparison" View
 
 ![comparisonimageAfterfirststep](screenshots/step1.png)
 
@@ -46,7 +46,7 @@ Axis Optimization: Excluding zero is essential for high-precision sensor data wh
 
 Data Integration: Combining Health Score (Current State), Failure Prob (Future Risk), and RUL (Timeline) into a single bar chart creates a multi-dimensional scorecard.
 
-# 3.Maintanence Schedule Heat map
+# 2.Maintanence Schedule Heat map
 
 ![maintanencescheduleheatmap](screenshots/MAINTANENCE.png)
 
